@@ -1,0 +1,20 @@
+
+import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(7, GPIO.OUT)
+GPIO.output(7,True)
+time.sleep(.1)
+GPIO.output(7,False)
+time.sleep(.05)
+GPIO.output(7,True)
+time.sleep(0.25)
+GPIO.output(7,False)
+time.sleep(.01)
+GPIO.output(7,True)
+time.sleep(.01)
+GPIO.output(7,False)
+time.sleep(1.5)
+GPIO.output(7,True)
+time.sleep(0.05)
+GPIO.output(7,False)
