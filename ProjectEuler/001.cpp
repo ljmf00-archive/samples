@@ -8,16 +8,13 @@ int main() {
         {
             	if (i % 5 == 0)
                 {
-                    cout << i << "; ";
                     num=num+i;
                 }
                 else if (i % 3 == 0)
                 {
-                    cout << i << "; ";
                     num=num+i;
                 }
         }
-        cout << endl << "===" << endl;
-        cout << num << endl;
+        cout << num;
 	return 0;
 }

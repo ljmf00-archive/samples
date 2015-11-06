@@ -7,7 +7,6 @@ int fibonacci(int n);
 int main()
 {
     int n=4000000, i = 0, c, num = 0;
-    cout << "Even-Fibonacci sequence: " << endl;
     for ( c = 1 ; c <= n ; c++ )
    {
       if (fibonacci(i) >= 4000000) {
@@ -16,13 +15,12 @@ int main()
       else
       {
           if(fibonacci(i)%2==0){
-            cout << fibonacci(i) << "; ";
             num=num+fibonacci(i);
           }
       }
       i++;
    }
-   cout << endl << "===" << endl << num << endl;
+   cout << num;
     return 0;
 }
 
