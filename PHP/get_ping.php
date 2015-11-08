@@ -1,3 +1,11 @@
+ <head>
+		<!-- Custom styles for this template -->
+	<link rel="stylesheet" type="text/css" href="res/style.css"> 
+	<link rel="stylesheet" type="text/css" href="res/main.css"> 
+		<!-- Scripts -->
+	<script src="res/jquery.js"></script>
+	<script src="res/smoothscroll.js"></script>
+ </head>
 <?php
     function ping($host,$port=80,$timeout=6)
     {
