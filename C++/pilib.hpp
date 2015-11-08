@@ -18,7 +18,10 @@
 
 #endif
 
-#include "libs.hpp"
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+
 #define FPINUMBASE    10000
 
 // ...
