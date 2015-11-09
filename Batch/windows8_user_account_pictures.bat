@@ -1,0 +1,2 @@
+explorer.exe shell:AccountPictures
+exit

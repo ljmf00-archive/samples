@@ -1,0 +1,2 @@
+mmc devmgmt.msc
+exit
