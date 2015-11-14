@@ -1,61 +1,4 @@
-<html>
-  <head>
-		<!-- Custom styles for this template -->
-	<link rel="stylesheet" type="text/css" href="/res/style.css"> 
-	<link rel="stylesheet" type="text/css" href="/res/main.css"> 
-
-		<!-- Scripts -->
-	<script src="/res/jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
-	<script src="/res/smoothscroll.js"></script>
-	
-		<!-- Bootstrap -->
-		<link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
-		<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-	<form class="form-horizontal" method="post">
-		<fieldset>
-		
-				<!-- Text input-->
-			<div class="form-group">
-				<label class="col-md-4 control-label" for="textinput">DNS/IP:</label>  
-				<div class="col-md-4">
-					<input id="texbox" name="domain" placeholder="example.com" class="form-control input-md" type="text">
-					<span class="help-block">Domain name / IP Address</span>  
-				</div>
-			</div>
-
-				<!-- Multiple Radios -->
-			<div class="form-group">
-				<label class="col-md-4 control-label" for="radios">Server:</label>
-				<div class="col-md-4">
-					<div class="radio">
-						<label for="radios-0">
-						<input name="server" id="radios-0" value="1" checked="checked" type="radio">
-						.PT
-						</label>
-					</div>
-					<div class="radio">
-						<label for="radios-1">
-						<input name="server" id="radios-1" value="2" type="radio">
-						Global
-						</label>
-					</div>
-				</div>
-			</div>
-
-				<!-- Button -->
-			<div class="form-group">
-				<label class="col-md-4 control-label" for="buttonsubmit">Submit:</label>
-				<div class="col-md-4">
-					<button id="buttonsubmit" class="btn btn-primary">Whois</button>
-				</div>
-			</div>
-		</fieldset>
-	</form>
-	<?php
+<?php
 if (isset($_POST['server'])) {
     switch ($_POST['server']) {
         case 1:
@@ -135,5 +78,3 @@ function zero() {
     } return "ERRORCODE22 with $url!!<br/>Last status codes<b/>:" . json_encode($status) . "<br/><br/>Last data got<br/>:$data";
 }
 ?>
-  </body>
-</html>
