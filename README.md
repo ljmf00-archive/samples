@@ -1,1 +1,1 @@
-# BitOfCode_Samples
+# Samples
